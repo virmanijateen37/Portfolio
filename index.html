@@ -1,58 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jateen Virmani | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-    <title>Personal Portfolio Using only HTML and CSS</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">Portfolio</a>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
+
+  <!-- Bars Animation -->
+  <div class="bars-animation">
+    <div class="bar" style="--i:6"></div>
+    <div class="bar" style="--i:5"></div>
+    <div class="bar" style="--i:4"></div>
+    <div class="bar" style="--i:3"></div>
+    <div class="bar" style="--i:2"></div>
+    <div class="bar" style="--i:1"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="logo">Portfolio</a>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    <ul id="navLinks">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li class="dropdown" id="contactDropdown">
+        <a href="#" onclick="toggleDropdown(event)">Contact</a>
+        <ul class="dropdown-menu" id="contactMenu">
+          <li><a href="https://wa.me/919468466400" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:jateenvirmani422@gmail.com" target="_blank">Email</a></li>
         </ul>
-    </nav>
-    <div class="bars-animation">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-info">
+      <h1>Jateen Virmani</h1>
+      <h2>I am a 
+        <span style="--i:4" data-text="Frontend Developer">Frontend Developer</span>
+        <span style="--i:3" data-text="Blogger">Blogger</span>
+        <span style="--i:2" data-text="YouTuber">YouTuber</span>
+        <span style="--i:1" data-text="Designer">Designer</span>
+      </h2>
+      <p> Hi, I'm <strong>Jateen Virmani</strong> — a developer and digital creator. I build responsive web interfaces using HTML, CSS, and JavaScript, and I'm constantly exploring new tools to expand my skills.</p>
+      <div class="btn-sci">
+        <a href="JateenVirmaniResume (1).pdf" class="btn" download="JateenVirmani_Resume.pdf" target="_blank">
+          Download Resume
+        </a>
+        <div class="sci">
+          <a href="https://github.com/virmanijateen37" target="_blank"><i class='bxl bx-github'></i></a>
+          <a href="https://www.linkedin.com/in/jateen-virmani-3835a2323" target="_blank"><i class='bxl bx-linkedin'></i></a>
+          <a href="#"><i class='bxl bx-twitter'></i></a>
+          <a href="https://www.youtube.com/@f37gamerz" target="_blank"><i class='bxl bx-youtube'></i></a>
+        </div>
+      </div>
     </div>
-    <section class="home">
-        <div class="home-info">
-            <h1>Jateen Virmani</h1>
-            <h2>I am a 
-                <span style="--i:4" data-text="Frontend Developer">Frontend Developer</span>
-                <span style="--i:3" data-text="Blogger">Blogger</span>
-                <span style="--i:2" data-text="YouTuber">YouTuber</span>
-                <span style="--i:1" data-text="Designer">Designer</span>
-            </h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos harum a perspiciatis reprehenderit doloribus quas consequatur quam esse error quae libero delectus minima dolorem, accusamus iusto adipisci at architecto totam tempora distinctio exercitationem eos!</p>
-            <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="https://github.com/virmanijateen37" target="_blank"><i class='bxl  bx-github'  ></i> </a>
-                    <a href="https://www.linkedin.com/in/jateen-virmani-3835a2323" target="_blank"><i class='bxl  bx-linkedin'  ></i> </a>
-                    <a href="#"><i class='bxl  bx-twitter'  ></i> </a>
-                    <a href="https://www.youtube.com/@f37gamerz" target="_blank"><i class='bxl  bx-youtube'  ></i> </a>
-                </div>
-            </div>
+    <div class="home-image">
+      <div class="img-box">
+        <div class="img-item">
+          <img src="passport.png" alt="Jateen Virmani">
         </div>
-        <div class="home-image">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="passport.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <p>
+       I am a B.Tech (CSE) student at Uttaranchal Institute of Technology with a passion for web development. I am eager to enhance my skills with a strong foundation in HTML and CSS. My academic performance reflects my dedication, as I've maintained a high percentage throughout my schooling. My goal is to leverage my knowledge and thrive as a proficient web developer.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="section-title">
+      <h2>Services</h2>
+    </div>
+    <div class="services-content">
+      <div class="service-box">
+        <h3>Web Development</h3>
+        <p>Building responsive, modern websites using HTML, CSS, and JavaScript that look great on all devices.</p>
+      </div>
+      <div class="service-box">
+        <h3>UI/UX Design</h3>
+        <p>Creating intuitive and visually appealing interfaces to ensure seamless user experience and accessibility.</p>
+      </div>
+      <div class="service-box">
+        <h3>Content Creation</h3>
+        <p>Producing educational and entertaining content for YouTube and social platforms to connect with a broader audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
